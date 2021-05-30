@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Twilito website",
+  "main": "./app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twilito/Website.git"
+  },
+  "author": "Twilito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Twilito/Website/issues"
+  },
+  "homepage": "https://github.com/Twilito/Website#readme"
+}
