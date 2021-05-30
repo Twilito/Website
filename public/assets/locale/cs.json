@@ -1,0 +1,13 @@
+{
+    "index":{
+        "title": "Twilito ― Hlavní stránka",
+        "loaderTitles":{
+            "loading": ["Náčítání"],
+            "error": ["Došlo k problému"],
+            "":[""]
+        },
+        "getElementById": {
+            
+        }
+    }
+}

@@ -4,7 +4,7 @@
   "description": "Twilito website",
   "main": "./src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "nodemon ."
   },
   "repository": {
     "type": "git",

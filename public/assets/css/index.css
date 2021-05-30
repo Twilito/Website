@@ -1,6 +1,32 @@
+@font-face {
+    font-family: robotoRegular;
+    src: url('/assets/font/roboto/Roboto-Regular.ttf');
+}
 *{
     margin: 0;
     padding: 0;
     --Background: #1f1f1f;
     --Navbar: white;
+    --Background-Gradient: linear-gradient(45deg, rgb(182, 169, 55),rgb(179, 68, 24));
+    --Loader-Gradient: linear-gradient(45deg, rgb(192, 52, 52),rgb(228, 108, 53));
+    --Loader-Text: white;
+}
+html,body{
+    background-image: var(--Background-Gradient);
+    width: 100vw;
+    height: 100vh;
+}
+.Loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--Loader-Gradient);
+    z-index: 1000;
+}
+.Loader a{
+    color: var(--Loader-Text);
+    font-family: robotoRegular;
+    font-size: 100px;
 }
