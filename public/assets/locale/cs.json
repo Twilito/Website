@@ -1,13 +1,21 @@
 {
     "index":{
         "title": "Twilito ― Hlavní stránka",
-        "loaderTitles":{
-            "loading": ["Náčítání"],
-            "error": ["Došlo k problému"],
-            "":[""]
-        },
         "getElementById": {
-            
+            "navHome":"Domů",
+            "navHire":"Pracovní pozice",
+            "navAbout":"O nás",
+            "navLogin":"Přihlásit se",
+            "mainTopSlogan":"\"Tvoříme weby\"",
+            "mainMiddlePrinciples":"Máme své zásady.",
+            "PrinciplesPropose":"navrhnout",
+            "PrinciplesDiscuss":"projednat",
+            "PrinciplesImplement":"zrealizovat",
+            "footerBottomCreatedSlogan":"Vytvořeno s ❤️ v Twilitu.",
+            "footerCompanyTitle":"Společnost",
+            "footAbout":"O nás",
+            "footHire":"Pracovní pozice",
+            "footContact":"Kontakt"
         }
     }
 }

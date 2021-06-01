@@ -2,7 +2,11 @@
     "index":{
         "title": "Twilito ― Home",
         "getElementById": {
-            
+            "navHome":"Home",
+            "navHire":"Hire me",
+            "navAbout":"About us",
+            "navLogin":"Login",
+            "mainTopSlogan":"\"We are creating webs\""
         }
     }
 }
