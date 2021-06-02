@@ -30,7 +30,8 @@ async function languageAssign(languageCode) {
 
 
 function load() {
-    languageAssign(navigator.language);
+    // languageAssign(navigator.language);
+    languageAssign("cs");
 }
 
 document.body.onload = () =>(load());
