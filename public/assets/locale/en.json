@@ -6,7 +6,19 @@
             "navHire":"Hire me",
             "navAbout":"About us",
             "navLogin":"Login",
-            "mainTopSlogan":"\"We are creating webs\""
+            "mainTopSlogan":"\"We are creating webs\"",
+            "mainMiddlePrinciples":"We have our principles.",
+            "PrinciplesPropose":"propose",
+            "PrinciplesDiscuss":"discuss",
+            "PrinciplesImplement":"implement",
+            "mainNeedWorkTitle":"Need work?",
+            "mainNeedWorkDescription":"Work with us is happines.",
+            "mainNeedWorkHireButton":"Hire me",
+            "footerBottomCreatedSlogan":"Created with ❤️ by Twilito.",
+            "footerCompanyTitle":"Company",
+            "footAbout":"About",
+            "footHire":"Hire me",
+            "footContact":"Contact"
         }
     }
 }

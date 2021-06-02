@@ -1,12 +1,10 @@
 /*
     Twilito 2021
     GitHub: https://github.com/Twilito
-    */
+*/
 const supportedLanguages = ["en","cs"];
 const pageName = "index";
 let locale = {};
-
-
 
 async function languageAssign(languageCode) {
     //Supported language?

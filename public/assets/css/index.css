@@ -12,7 +12,7 @@
     --Background: #1f1f1f;
     --Area: #525252;
     --Navbar: transparent;
-    --Area-Hover: rgba(27, 27, 27, 0.596);
+    --Area-Hover: rgba(27, 27, 27, 0.39);
     --Background-Gradient: 45deg,rgb(77, 134, 239), rgb(134, 28, 196);
     --TextColor: white;
     --ScrollBarColor: rgb(48, 48, 48);
@@ -23,6 +23,8 @@
     --SmallTextTitle: 0.9vw;
     --SmallText: 0.8vw;
     --LargeText: 3vw;
+    --MediumText: 2vw;
+    --ListLineHeight: 100px;
 }
 html {
     height: fit-content;
@@ -97,19 +99,19 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 150px;
-    margin-left: 100px;
-    width: 45%;
+    margin-top: 200px;
+    width: 100%;
     height: fit-content;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .mainTopLogoLarge{
-    width: 100%;
+    width: 40%;
     margin: 0;
     height: min-content;
+    margin-left: 100px;
 }
 .mainTopSlogan{
-    margin-left: 30px;
+    margin-left: 130px;
     color: var(--TextColor);
     font-size: var(--ExtremeLargeText);
     font-family: robotoBold;
@@ -134,16 +136,58 @@ main{
     margin-right: 200px;
 }
 .mainMiddleContentContainer h1{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-top: 100px;
     color: var(--TextColor);
     font-size: var(--ExtremeLargeText);
 }
 .mainMiddleContentContainer ul{
     list-style: none;
-    line-height: 100px;
+    line-height: var(--ListLineHeight);
     color: var(--TextColor);
     font-size: var(--LargeText);
+    margin-left: 20px;
+}
+.mainBottomContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+.mainBottomContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 150px;
+}
+.mainBottomContentContainer h1{
+    color: var(--TextColor);
+    font-size: var(--ExtremeLargeText);
+}
+.mainBottomContentContainer p{
+    color: var(--TextColor);
+    font-size: var(--MediumText);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.mainBottomContentContainer a{
+    align-self: flex-end;
+    text-decoration: none;
+    color: var(--TextColor);
+    font-size: var(--Text);
+    width: vat(--Text);
+    height:min-content;
+    background-color: var(--Area-Hover);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.mainBottomContentContainer a:hover{
+    transition: 0.3s;
+    background-color: var(--Area);
 }
 footer{
     display: flex;
@@ -192,9 +236,87 @@ footer div:nth-child(2) a:hover{
 }
 
 @media screen and (max-width: 1000px) {
-    /* change text sizes only */
-}
+    .navbar a{
+        font-size: 2.2vw;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    #navLogin{
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 2.2vw;
+    }
+    footer div:nth-child(2) a{
+        font-size: 2.3vw;
+    }
+    .footerCompanyTitle{
+        font-size: 2.6vw;
+    }
+    .footerBottomCreatedSlogan{
+        font-size: 1.6vw;
+    }
+    .mainBottomContentContainer a{
+        font-size: 2vw;
+    }
+    .mainBottomContentContainer p{
+        font-size: 4vw;
+    }
+    .mainBottomContentContainer h1{
+        font-size: 6vw;
+    }
+    .mainMiddleContentContainer ul{
+        font-size: 5vw;
+        margin: 0px;
+        line-height: 50px;
 
-@media screen and (max-width: 600px) {
-    /* must be responsive on 300px */
+    }
+    .mainMiddleContentContainer h1{
+        margin: 0px;
+        font-size: 6vw;
+        margin-bottom: 10px;
+    }
+    .mainTopSlogan{
+        font-size: 6vw;
+        margin: 0;
+    }
+    .mainTopLogoLarge{
+        width: 60%;
+        margin: 0;
+    }
+    .mainTopContainer{
+        margin-top: 100px;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .mainMiddleContentContainer{
+        margin: 0px;
+        align-items: center;
+    }
+    .mainMiddleContainer{
+        align-items: center;
+    }
+    .mainBottomContainer{
+        align-items: center;
+    }
+    .mainBottomContentContainer{
+        align-items: center;
+        margin: 0px;
+    }
+    .mainBottomContentContainer a{
+        margin: 0px;
+        margin-top: 10px;
+        font-size: 3vw;
+        padding: 10px;
+        align-self: center;
+    }
+    footer{
+        min-height: 100px;
+    }
+    footer div:nth-child(2){
+        margin-left: 100px;
+    }
+    footer div{
+        margin: 10px 0px 10px 15px;
+        max-width: 20vw;
+    }
 }
