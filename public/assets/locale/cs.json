@@ -69,6 +69,7 @@
         "getElementById": {
             "navHome":"Domů",
             "navHire":"Pracovní pozice",
+            "navAbout":"O nás",
             "navLogin":"Přihlásit se",
             "creatorTitle":"Zakladatel Twilita",
             "footerBottomCreatedSlogan":"Vytvořeno s ❤️ v Twilitu.",
