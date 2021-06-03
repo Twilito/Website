@@ -4,7 +4,8 @@
   "description": "Twilito website",
   "main": "./src/app.js",
   "scripts": {
-    "debug": "nodemon . 3000"
+    "debug": "nodemon . 3000",
+    "start": "node . $PORT"
   },
   "repository": {
     "type": "git",
