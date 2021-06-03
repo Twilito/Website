@@ -6,7 +6,7 @@
             "navHire":"Pracovní pozice",
             "navAbout":"O nás",
             "navLogin":"Přihlásit se",
-            "mainTopSlogan":"\"Tvoříme weby\"",
+            "mainTopSlogan":"„Tvoříme weby\"",
             "mainMiddlePrinciples":"Máme své zásady.",
             "PrinciplesPropose":"navrhnout",
             "PrinciplesDiscuss":"projednat",
@@ -28,19 +28,49 @@
             "navAbout":"O nás",
             "navLogin":"Přihlásit se",
             "jobsTitle":"Pracovní pozice",
-
             "FrontEndCardTitle":"Front-end vývojář",
             "FrontEndCardDescription":"Návrh a tvorba designu pro web.",
             "FrontEndCardLocation":"Česká Republika",
-
             "BackEndCardTitle":"Back-end vývojář",
             "BackEndCardDescription":"Tvorba architektury webu/serveru.",
             "BackEndCardLocation":"Česká Republika",
-
             "BrandDesignCardTitle":"Designer značky",
             "BrandDesignCardDescription":"Tvorba našého otisku na internetu.",
             "BrandDesignCardLocation":"Česká Republika",
-
+            "footerBottomCreatedSlogan":"Vytvořeno s ❤️ v Twilitu.",
+            "footerCompanyTitle":"Společnost",
+            "footAbout":"O nás",
+            "footHire":"Pracovní pozice",
+            "footContact":"Kontakt"
+        }
+    },
+    "about":{
+        "title": "Twilito ― O nás",
+        "getElementById": {
+            "navHome":"Domů",
+            "navHire":"Pracovní pozice",
+            "navLogin":"Přihlásit se",
+            "mainTitle":"„Jsme Twilito\"",
+            "mainDescription":"Jsme profesionálové ve tvorbě webových stránek.",
+            "chooseUsTitle":"Proč my?",
+            "listFast":"Rychlost",
+            "listUnique":"Unikátní design",
+            "listCommunication":"Vynikající komunikace",
+            "listMethods":"Moderní prostředky a metody",
+            "footerBottomCreatedSlogan":"Vytvořeno s ❤️ v Twilitu.",
+            "footerCompanyTitle":"Společnost",
+            "footAbout":"O nás",
+            "footHire":"Pracovní pozice",
+            "footContact":"Kontakt"
+        }
+    },
+    "contact":{
+        "title": "Twilito ― Kontakt",
+        "getElementById": {
+            "navHome":"Domů",
+            "navHire":"Pracovní pozice",
+            "navLogin":"Přihlásit se",
+            "creatorTitle":"Zakladatel Twilita",
             "footerBottomCreatedSlogan":"Vytvořeno s ❤️ v Twilitu.",
             "footerCompanyTitle":"Společnost",
             "footAbout":"O nás",

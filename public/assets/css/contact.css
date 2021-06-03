@@ -1,0 +1,210 @@
+@font-face {
+    font-family: robotoRegular;
+    src: url('/assets/font/roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: robotoBold;
+    src: url("/assets/font/roboto/Roboto-Bold.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    --Background: #1f1f1f;
+    --Area: #525252;
+    --DarkArea: #353535;
+    --Navbar: transparent;
+    --Area-Hover: rgba(27, 27, 27, 0.39);
+    --Background-Gradient: 45deg,rgb(77, 134, 239), rgb(134, 28, 196);
+    --TextColor: white;
+    --ScrollBarColor: rgb(48, 48, 48);
+    --TextAlign: #23CE6B;
+    --WhiteArea: white;
+    --CardText: rgb(59, 59, 59);
+    --CardTextDark: rgb(88, 88, 88);
+
+    --ExtremeLargeText: 4vw;
+    --Text: 1vw;
+    --SmallTextTitle: 0.9vw;
+    --SmallText: 0.8vw;
+    --LargeText: 3vw;
+    --MediumText: 2vw;
+    --ListLineHeight: 100px;
+}
+html {
+    height: fit-content;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(var(--Background-Gradient));
+    background: -webkit-linear-gradient(var(--Background-Gradient));
+    width: 100%;
+    min-height: 100%;
+    font-family: robotoRegular;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: var(--Navbar);
+}
+.nabarList{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.navbar a{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--TextColor);
+    text-decoration: none;
+    font-size: var(--Text);
+    width: fit-content;
+    height:min-content;
+    border-radius: 8px;
+    padding: 15px;
+}
+.navbar a:hover{
+    transition: 0.3s;
+    background-color: var(--Area-Hover);
+}
+#navLogin{
+    display: flex;
+    margin-left: 20px;
+    justify-self: start;
+    color: var(--TextColor);
+    margin-right: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: min-content;
+}
+#navLogin:hover{
+    transition: 0.3s;
+    background-color: var(--Area-Hover);
+}
+.FlexWebContent{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+main h1{
+    color: var(--TextColor);
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+main p{
+    color: var(--TextColor);
+    font-size: 2.5vw;
+}
+.socialsFlex{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.socialsLogo{
+    width: 2vw;
+}
+footer{
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    height: fit-content;
+    min-height: 200px;
+    background: var(--Area);
+}
+.footerBottomLogo{
+    width: 90%;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+    align-items: center;
+    margin: 50px 0px 10px 50px;
+    max-width: 10vw;
+}
+footer div:nth-child(2){
+    margin-left: 150px;
+}
+footer div:nth-child(2) a{
+    font-size: var(--SmallText);
+    align-self: flex-start;
+    justify-self: left;
+    text-decoration: none;
+    color: var(--TextColor);
+}
+footer div:nth-child(2) a:hover{
+    text-decoration: underline;
+    color: var(--TextColor);
+}
+.footerBottomCreatedSlogan{
+    color: var(--TextColor);
+    font-size: var(--SmallText);
+}
+.footerCompanyTitle{
+    font-size: var(--SmallTextTitle);
+    align-self: flex-start;
+    letter-spacing: 1px;
+    color: var(--TextAlign);
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar a{
+        font-size: 2.2vw;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    #navLogin{
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 2.2vw;
+    }
+    footer div:nth-child(2) a{
+        font-size: 2.3vw;
+    }
+    .footerCompanyTitle{
+        font-size: 2.6vw;
+    }
+    .footerBottomCreatedSlogan{
+        font-size: 1.6vw;
+    }
+    footer{
+        min-height: 2   00px;
+    }
+    footer div:nth-child(2){
+        margin-left: 100px;
+    }
+    footer div{
+        margin: 20px 0px 10px 15px;
+        max-width: 20vw;
+    }
+    main{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
