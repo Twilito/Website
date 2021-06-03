@@ -22,6 +22,6 @@ app.all("/Contact", (req,res) => {
     res.sendFile(path.join(__dirname,"../public/Contact.html"))
 });
 
-app.listen(port, () =>{
-    console.log("Running on", port);
+app.listen(process.argv[2], () =>{
+    console.log("Running on", process.argv[2]);
 })
