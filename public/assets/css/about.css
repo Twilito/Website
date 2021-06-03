@@ -227,6 +227,11 @@ footer div:nth-child(2) a:hover{
     }
     .ListContainer ul{
         font-size: 5.5vw;
-        line-height: 30px;
+        line-height: 70px;
+    }
+}
+@media screen and (max-width: 500px){
+    .ListContainer ul{
+        line-height: 40px;
     }
 }
