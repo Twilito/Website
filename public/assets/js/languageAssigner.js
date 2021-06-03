@@ -1,11 +1,3 @@
-/*
-    Twilito 2021
-    GitHub: https://github.com/Twilito
-*/
-const supportedLanguages = ["en","cs"];
-const pageName = "index";
-let locale = {};
-
 async function languageAssign(languageCode) {
     //Supported language?
     if (supportedLanguages.includes(languageCode) === false) {
@@ -22,15 +14,12 @@ async function languageAssign(languageCode) {
         document.title = locale["title"];
     }
     if(locale['getElementById']){
-        Object.keys(locale['getElementById']).forEach(elementKey => {
-            document.getElementById(elementKey).innerHTML = locale['getElementById'][elementKey];
+        Object.keys(locale['querySelectorAll']).forEach(elementKey => {
+            let elements = document.querySelector(elementKey);
+            elements.forEach(element => {
+                element.innerHTML = locale['querySelectorAll'][elementKey];
+            })
+            console.log(elements);
         });
     }
 }
-
-function load() {
-    // languageAssign(navigator.language);
-    languageAssign("cs");
-}
-
-document.body.onload = () =>(load());

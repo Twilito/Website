@@ -20,5 +20,32 @@
             "footHire":"Pracovní pozice",
             "footContact":"Kontakt"
         }
+    },
+    "jobs":{
+        "title": "Twilito ― Pracovní pozice",
+        "getElementById": {
+            "navHome":"Domů",
+            "navAbout":"O nás",
+            "navLogin":"Přihlásit se",
+            "jobsTitle":"Pracovní pozice",
+
+            "FrontEndCardTitle":"Front-end vývojář",
+            "FrontEndCardDescription":"Návrh a tvorba designu pro web.",
+            "FrontEndCardLocation":"Česká Republika",
+
+            "BackEndCardTitle":"Back-end vývojář",
+            "BackEndCardDescription":"Tvorba architektury webu/serveru.",
+            "BackEndCardLocation":"Česká Republika",
+
+            "BrandDesignCardTitle":"Designer značky",
+            "BrandDesignCardDescription":"Tvorba našého otisku na internetu.",
+            "BrandDesignCardLocation":"Česká Republika",
+
+            "footerBottomCreatedSlogan":"Vytvořeno s ❤️ v Twilitu.",
+            "footerCompanyTitle":"Společnost",
+            "footAbout":"O nás",
+            "footHire":"Pracovní pozice",
+            "footContact":"Kontakt"
+        }
     }
 }

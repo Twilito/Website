@@ -3,7 +3,7 @@
     GitHub: https://github.com/Twilito
 */
 const supportedLanguages = ["en","cs"];
-const pageName = "index";
+const pageName = "jobs";
 let locale = {};
 
 async function languageAssign(languageCode) {

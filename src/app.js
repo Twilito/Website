@@ -10,8 +10,8 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname,"../public/")));
 
-app.all("/", (req,res) => {
-    
+app.all("/Jobs", (req,res) => {
+    res.sendFile(path.join(__dirname,"../public/Jobs.html"))
 });
 
 app.listen(port, () =>{

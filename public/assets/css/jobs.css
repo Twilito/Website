@@ -11,12 +11,16 @@
     padding: 0;
     --Background: #1f1f1f;
     --Area: #525252;
+    --DarkArea: #353535;
     --Navbar: transparent;
     --Area-Hover: rgba(27, 27, 27, 0.39);
     --Background-Gradient: 45deg,rgb(77, 134, 239), rgb(134, 28, 196);
     --TextColor: white;
     --ScrollBarColor: rgb(48, 48, 48);
     --TextAlign: #23CE6B;
+    --WhiteArea: white;
+    --CardText: rgb(59, 59, 59);
+    --CardTextDark: rgb(88, 88, 88);
 
     --ExtremeLargeText: 4vw;
     --Text: 1vw;
@@ -29,6 +33,7 @@
 html {
     height: fit-content;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 body{
     background-image: linear-gradient(var(--Background-Gradient));
@@ -95,99 +100,79 @@ body{
     height: 100%;
     flex-direction: column;
 }
-.mainTopContainer{
+
+main{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 200px;
+    align-items: center;
     width: 100%;
     height: fit-content;
-    margin-bottom: 50px;
 }
-.mainTopLogoLarge{
-    width: 40%;
-    margin: 0;
-    height: min-content;
-    margin-left: 100px;
-}
-.mainTopSlogan{
-    margin-left: 130px;
+.jobsTitle{
     color: var(--TextColor);
     font-size: var(--ExtremeLargeText);
-    font-family: robotoBold;
-}
-main{
-    width: 100%;
-    height: fit-content;
+    margin-bottom: 100px;
 }
 
-.mainMiddleContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
+.mainMainContainer{
+    width: 75vw;
     min-height: 50vh;
-    align-items: flex-end;
-    margin-bottom: 200px;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
 }
-.mainMiddleContentContainer{
+.JobCard{
+    width: 15vw;
+    height: min-content;
+    background-color: var(--WhiteArea);
+    border-radius: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.JobCard:hover{
+    transition: 0.3s;
+    box-shadow: -2px 10px 20px var(--Area);
+}
+.JobCardContent{
     display: flex;
-    flex-direction: column;
-    margin-right: 200px;
+    flex-direction: column; 
+    padding: 10px;
+    width: calc(100% - 20px);/* This must be 2* padding */
+    height: calc(100% - 20px); /* This must be 2* padding */
+    justify-content: space-between;
 }
-.mainMiddleContentContainer h1{
+.JobCardContent h1{
+    color: var(--CardText);
+    font-size: 1.2vw;
+    font-family: robotoRegular;
     margin-bottom: 10px;
-    margin-top: 100px;
-    color: var(--TextColor);
-    font-size: var(--ExtremeLargeText);
-}
-.mainMiddleContentContainer ul{
-    list-style: none;
-    line-height: var(--ListLineHeight);
-    color: var(--TextColor);
-    font-size: var(--LargeText);
-    margin-left: 20px;
-}
-.mainBottomContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    align-items: flex-start;
-    margin-top: 100px;
-}
-.mainBottomContentContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 150px;
-}
-.mainBottomContentContainer h1{
-    color: var(--TextColor);
-    font-size: var(--ExtremeLargeText);
-}
-.mainBottomContentContainer p{
-    color: var(--TextColor);
-    font-size: var(--MediumText);
-    margin-top: 10px;
     margin-left: 10px;
 }
-.mainBottomContentContainer a{
-    align-self: flex-end;
-    text-decoration: none;
-    color: var(--TextColor);
-    font-size: var(--Text);
-    width: vat(--Text);
-    height:min-content;
-    background-color: var(--Area-Hover);
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-right: 20px;
+.JobCardContent p{
+    color: var(--CardText);
+    font-size: 1vw;
+    font-family: robotoRegular;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
-.mainBottomContentContainer a:hover{
-    transition: 0.3s;
-    background-color: var(--Area);
+.JobCardBottomFlex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.JobCardMapMark{
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.JobCardBottomFlex p{
+    color: var(--CardTextDark);
+    font-size: 0.9vw;
+    
 }
 footer{
     display: flex;
@@ -246,6 +231,10 @@ footer div:nth-child(2) a:hover{
         border-radius: 8px;
         font-size: 2.2vw;
     }
+    .mainMainContainer{
+        margin-top: 50px;
+        width: 80vw;
+    }
     footer div:nth-child(2) a{
         font-size: 2.3vw;
     }
@@ -254,60 +243,6 @@ footer div:nth-child(2) a:hover{
     }
     .footerBottomCreatedSlogan{
         font-size: 1.6vw;
-    }
-    .mainBottomContentContainer a{
-        font-size: 2vw;
-    }
-    .mainBottomContentContainer p{
-        font-size: 4vw;
-    }
-    .mainBottomContentContainer h1{
-        font-size: 6vw;
-    }
-    .mainMiddleContentContainer ul{
-        font-size: 5vw;
-        margin: 0px;
-        line-height: 50px;
-
-    }
-    .mainMiddleContentContainer h1{
-        margin: 0px;
-        font-size: 6vw;
-        margin-bottom: 10px;
-    }
-    .mainTopSlogan{
-        font-size: 6vw;
-        margin: 0;
-    }
-    .mainTopLogoLarge{
-        width: 60%;
-        margin: 0;
-    }
-    .mainTopContainer{
-        margin-top: 100px;
-        align-items: center;
-        margin-bottom: 100px;
-    }
-    .mainMiddleContentContainer{
-        margin: 0px;
-        align-items: center;
-    }
-    .mainMiddleContainer{
-        align-items: center;
-    }
-    .mainBottomContainer{
-        align-items: center;
-    }
-    .mainBottomContentContainer{
-        align-items: center;
-        margin: 0px;
-    }
-    .mainBottomContentContainer a{
-        margin: 0px;
-        margin-top: 10px;
-        font-size: 3vw;
-        padding: 10px;
-        align-self: center;
     }
     footer{
         min-height: 2   00px;
@@ -318,5 +253,30 @@ footer div:nth-child(2) a:hover{
     footer div{
         margin: 20px 0px 10px 15px;
         max-width: 20vw;
+    }
+    main{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .jobsTitle{
+        margin-bottom: 50px;
+        font-size: 10vw;
+    }
+    .mainMainContainer{
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+    .JobCard{
+        width: 80vw;
+    }
+    .JobCardContent h1{
+        font-size: 5vw;
+    }
+    .JobCardContent p{
+        font-size: 4.7vw;
+    }
+    .JobCardMapMark{
+        width: 4.7vw;
+        height: 4.7vw;
     }
 }
