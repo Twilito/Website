@@ -5,6 +5,7 @@
             "navHome":"Domů",
             "navHire":"Pracovní pozice",
             "navAbout":"O nás",
+            "navContact":"Kontakt",
             "navLogin":"Přihlásit se",
             "mainTopSlogan":"„Tvoříme weby\"",
             "mainMiddlePrinciples":"Máme své zásady.",
@@ -26,6 +27,7 @@
         "getElementById": {
             "navHome":"Domů",
             "navAbout":"O nás",
+            "navContact":"Kontakt",
             "navLogin":"Přihlásit se",
             "jobsTitle":"Pracovní pozice",
             "FrontEndCardTitle":"Front-end vývojář",
@@ -49,6 +51,7 @@
         "getElementById": {
             "navHome":"Domů",
             "navHire":"Pracovní pozice",
+            "navContact":"Kontakt",
             "navLogin":"Přihlásit se",
             "mainTitle":"„Jsme Twilito\"",
             "mainDescription":"Jsme profesionálové ve tvorbě webových stránek.",
@@ -71,6 +74,7 @@
             "navHire":"Pracovní pozice",
             "navAbout":"O nás",
             "navLogin":"Přihlásit se",
+            "headquarters":"Sídlo",
             "creatorTitle":"Zakladatel Twilita",
             "footerBottomCreatedSlogan":"Vytvořeno s ❤️ v Twilitu.",
             "footerCompanyTitle":"Společnost",
