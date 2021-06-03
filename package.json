@@ -5,7 +5,7 @@
   "main": "./src/app.js",
   "scripts": {
     "debug": "nodemon .",
-    "production":"node . NODE_ENV=production"
+    "start":"node . NODE_ENV=production"
   },
   "repository": {
     "type": "git",
