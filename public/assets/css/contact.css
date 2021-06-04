@@ -62,10 +62,9 @@ body{
     display: flex;
     align-content: center;
     justify-content: center;
+    gap: 2px;
 }
 .navbar a{
-    margin-right: 10px;
-    margin-left: 10px;
     color: var(--TextColor);
     text-decoration: none;
     font-size: var(--Text);
@@ -73,6 +72,9 @@ body{
     height:min-content;
     border-radius: 8px;
     padding: 15px;
+}
+.navbar a:last-child{
+    margin-right: 5px;
 }
 .navbar a:hover{
     transition: 0.3s;
@@ -215,7 +217,7 @@ footer div:nth-child(2) a:hover{
 }
 @media screen and (max-width: 1000px) {
     .navbar a{
-        font-size: 2vw;
+        font-size: 2.5vw;
         padding: 10px;
         border-radius: 8px;
     }
